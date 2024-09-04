@@ -105,9 +105,8 @@ const SearchBar = ({ onSearch, onFilter }) => {
                             <label>
                                 <input
                                     type="checkbox"
-                                    value="All"
-                                    checked={selectedFilters.status.includes('All')}
-                                    onChange={() => handleCheckboxChange('status', 'All')}
+                                    value=""
+                                    checked="checked"
                                 />
                                 All
                             </label>
