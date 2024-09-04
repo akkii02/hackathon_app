@@ -1,0 +1,164 @@
+.main {
+  width: 100%;
+  height: 558px;
+  background-color: #003145;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.slideOne {
+  width: 50%;
+  height: 348px;
+}
+.headingSlide {
+  width: 100%;
+  border-left: 9px solid #ffce5c;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: left;
+  width: 82%;
+  margin-left: 9%;
+  color: white;
+}
+.slide {
+  width: 80%;
+  margin-left: 10%;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #ececec;
+}
+.btn {
+  width: 198px;
+  height: 47px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.slideTwo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid white; */
+}
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 768px) {
+    .main {
+      width: 100%;
+      height: auto;
+    }
+  
+    .slideOne{
+      width: 60%;
+      margin: 30px 0;
+    }
+    .slideTwo {
+        width: 30%;
+    }
+  
+    .slideTwo {
+      margin: 10px 0;
+    }
+  
+    .headingSlide, .slide {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: left;
+    }
+  
+    .paragraph {
+      font-size: 14px;
+      line-height: 22px;
+      margin: 10px 10%;
+    }
+  
+    .btn {
+      margin: 20px 0 0 10%;
+      width: 150px;
+      height: 40px;
+      font-size: 12px;
+    }
+  }
+
+@media (max-width: 468px) {
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.slideOne,
+.slideTwo {
+    width: 100%;
+    margin: 30px 0;
+    /* border: 2px solid red; */
+}
+.slideTwo {
+    margin: 10px 0;
+}
+.headingSlide{
+      /* border: 2px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .slide{
+    width: 80%;
+
+    margin: 0 auto;
+    /* border: 2px solid red; */
+  }
+  .heading {
+    /* border: 2px solid red; */
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    /* border: 2px solid red; */
+  }
+  .paragraph {
+    width: 80%;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 10px auto;
+  }
+  .btn {
+    margin:  20px 0 0 10%;
+    width: 150px;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+  }
+}

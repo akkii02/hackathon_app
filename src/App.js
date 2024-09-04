@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import HeroSection from './components/HeroSection/HeroSection';
+import InfoBar from './components/InfoBar/InfoBar';
+import Information from './components/ChanllengesInformation/Information';
+import SearchBar from './components/SearchBar/SearchBar';
+import ChalangesList from './components/ChalangesList/ChalangesList';
+import CreateChallenges from './components/CreateChallengesForm/CreateChallenges'; 
+import ChallengesDetailPage from './components/ChallengesDetailPage/ChallengesDetailPage';
+import ChallengesPage from './components/SearchandFilter/ChallengesPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <HeroSection/>
+            <InfoBar/>
+            <Information/>
+            {/* <SearchBar/>
+            <ChalangesList/> */}
+            <ChallengesPage/>
+          </>
+        } />
+        <Route path="/create-challenge" element={<CreateChallenges />} />
+        <Route path="/edit-challenge/:id" element={<CreateChallenges />} /> 
+        <Route path="/challenge-detail/:id" element={<ChallengesDetailPage/>} />
+      </Routes>
+    </Router>
   );
 }
 

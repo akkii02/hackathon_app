@@ -1,0 +1,230 @@
+.detailContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.detailHead {
+  width: 100%;
+  height: 400px;
+  background: #003145;
+  display: flex;
+  align-items: center;
+}
+
+.infoContainer {
+  width: 70%;
+  height: 228px;
+  margin-left: 10%;
+  /* border: 2px solid white; */
+}
+
+.timeBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 464px;
+  height: 34px;
+  background-color: #ffce5c;
+  border-radius: 10px;
+  font-family: "Inter", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 0 10px;
+}
+
+.timeBanner img {
+  margin-right: 8px; 
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: white;
+  padding: 0;
+  margin: 20px 0; 
+}
+
+.paragraph {
+  font-family: "Inter", system-ui;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+  margin: 20px 0; 
+}
+
+.levelBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px;
+  height: 34px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-top: 30px; 
+}
+
+.logoSignal {
+  margin-right: 6px; 
+}
+
+.txt {
+  font-family: "Inter", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: center;
+}
+.mainBar {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 12px 3px #606060;
+}
+.overviewBar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overviewBarHead {
+  width: 133px;
+  height: 53px;
+  font-family: "Inter", system-ui;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 5px solid #44924c;
+}
+.overviewBtn {
+  width: 200px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+}
+.edit,
+.del {
+  outline: none;
+  width: 91px;
+  height: 37px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.edit {
+  background-color: #44924c;
+  color: white;
+  border: 2px solid #44924c;
+}
+.del {
+  background-color: transparent;
+  border: 3px solid red;
+  color: red;
+  margin-bottom: 30px;
+}
+.des {
+  width: 70%;
+  margin: 5% 10%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #64607d;
+}
+@media (max-width: 468px) {
+  .detailContainer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    margin-top: 0px;
+  }
+.infoContainer{
+  width: 90%;
+  margin-left: 3%;
+  margin-top: 6%;
+}
+.timeBanner{
+  width: 80%;
+  margin: 0;
+  font-size: 10px;
+  padding: 0 5px;
+}
+.heading{
+  width: 90%;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 15px 0;
+}
+.paragraph{
+  font-size: 15px;
+  margin: 15px 0;
+  padding: 0;
+}
+.levelBtn{
+  width: 80px;
+  height: 32px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 8px;
+  margin-top: 15px; 
+}
+.overviewBar{
+  width: 95%;
+  height: 70px;
+}
+.overviewBarHead{
+  width: 120px;
+  height: 52px;
+  font-family: "Inter", system-ui;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  padding: 5px;
+}
+.overviewBtn{
+  width: 150px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  margin: 0;
+  padding: 0;
+}
+.edit,
+.del {
+  outline: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.des{
+  width: 80%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding: 0 0 30px 0;
+}
+}
